@@ -25,6 +25,8 @@ deploy:
   file: "/tmp/openconnect.tar.gz"
   # 避免 Travis CI在部署之前清空生成的APK文件
   skip_cleanup: true
+  on:
+    branch: master
 
 matrix:
   fast_finish: true
