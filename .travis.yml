@@ -26,7 +26,7 @@ deploy:
   # 避免 Travis CI在部署之前清空生成的APK文件
   skip_cleanup: true
   on:
-    branch: master
+    branch: develop
 
 matrix:
   fast_finish: true
