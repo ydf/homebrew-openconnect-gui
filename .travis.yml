@@ -4,7 +4,6 @@ env:
     - FORMULA_VERSION=--HEAD
 rvm: system
 before_install:
-  - brew update
   - brew --env
   - brew config
 install:
@@ -13,7 +12,6 @@ install:
 script:
   - brew install $FORMULA_VERSION --verbose openconnect-gui
   - tar zcf /tmp/openconnect.tar.gz /usr/local/Cellar/openconnect-gui/
-  - brew audit --strict openconnect-gui
 deploy:
   # 部署到GitHub Release。
   # 除此之外，Travis CI还支持发布到fir.im、AWS、Google App Engine等
