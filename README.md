@@ -1,6 +1,6 @@
 # homebrew-openconnect-gui
 
-[![Build Status](https://travis-ci.org/horar/homebrew-openconnect-gui.svg?branch=develop)](https://travis-ci.org/horar/homebrew-openconnect-gui)
+[![Build Status](https://travis-ci.org/ydf/homebrew-openconnect-gui.svg?branch=develop)](https://travis-ci.org/ydf/homebrew-openconnect-gui)
 
 Homebrew formula for OpenConnect-GUI.
 
