@@ -1,5 +1,5 @@
 name: Build  bin Action
-on: [push]
+on: [ push ]
 jobs:
   Explore-GitHub-Actions:
     runs-on: macos-latest
@@ -14,8 +14,7 @@ jobs:
         run: |
           ls ${{ github.workspace }}
           brew config
-          brew install git-lfs
-          git lfs install
+          ln -s "$(which git-lfs)" "$(git --exec-path)/git-lfs"
           mkdir -p $(brew --repo)/Library/Taps/horar
           ln -s ${{ github.workspace }} $(brew --repo)/Library/Taps/horar/homebrew-openconnect-gui
           brew install --HEAD openconnect-gui
