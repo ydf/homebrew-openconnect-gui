@@ -13,8 +13,9 @@ jobs:
       - name: List files in the repository
         run: |
           ls ${{ github.workspace }}
-          brew --env
           brew config
+          brew install git-lfs
+          git lfs install
           mkdir -p $(brew --repo)/Library/Taps/horar
           ln -s ${{ github.workspace }} $(brew --repo)/Library/Taps/horar/homebrew-openconnect-gui
           brew install --HEAD openconnect-gui
