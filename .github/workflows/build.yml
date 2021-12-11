@@ -18,8 +18,10 @@ jobs:
           mkdir -p $(brew --repo)/Library/Taps/horar
           ln -s ${{ github.workspace }} $(brew --repo)/Library/Taps/horar/homebrew-openconnect-gui
           brew install --HEAD openconnect-gui
+      - name: Tar files
+        run: tar -cvf oc-gui.tar /usr/local/Cellar/openconnect-gui/
       - name: Upload artifact
         uses: actions/upload-artifact@main
         with:
-          name: openconnect gui
-          path: /usr/local/Cellar/openconnect-gui/
+          name: oc-gui.tar
+          path: oc-gui.tar
