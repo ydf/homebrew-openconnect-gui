@@ -2,7 +2,7 @@ class OpenconnectGui < Formula
   desc "Graphical OpenConnect VPN client"
   homepage "https://openconnect.github.io/openconnect-gui/"
   head do
-    url "https://gitlab.com/openconnect/openconnect-gui.git", :branch => "develop", :depth => "1", :shallow => false
+    url "https://gitlab.com/openconnect/openconnect-gui.git", :branch => "develop", :shallow => true
   end
 
   option "with-ini-settings", "Store the settings in INI files"
