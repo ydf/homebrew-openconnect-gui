@@ -12,7 +12,7 @@ class OpenconnectGui < Formula
   depends_on :xcode => :build
   depends_on "pkg-config" => :build
   depends_on "cmake" => :build
-  depends_on "qt5"
+  depends_on "qt6"
   depends_on "openconnect"
 
   def install
